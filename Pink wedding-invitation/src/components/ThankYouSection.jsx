@@ -16,6 +16,7 @@ export default function ThankYouSection() {
           <div className="thankyou-card-text">
             <span className="ty-main">{thankYou.mainText}</span>
             <span className="ty-sub">{thankYou.subText}</span>
+            <span className="ty-developed">{thankYou.developedBy}</span>
           </div>
         </div>
       </div>

@@ -20,7 +20,7 @@ export default function EventsSection() {
                 border: '1px solid #f3b6c3',
                 borderRadius: '18px',
                 padding: '24px 20px',
-                marginBottom: '25px',
+                marginBottom: index === events.length - 1 ? '5px' : '25px',
                 boxShadow: '0 6px 22px rgba(229, 160, 174, 0.1)',
                 textAlign: 'center'
               }}
@@ -77,7 +77,8 @@ export default function EventsSection() {
                   fontSize: '1.1rem',
                   color: '#c43360',
                   fontWeight: '700',
-                  margin: '6px 0 10px 0'
+                  margin: '6px 0 10px 0',
+                  whiteSpace: 'pre-line'
                 }}
               >
                 {event.time}
@@ -120,17 +121,19 @@ export default function EventsSection() {
               )}
 
               {/* Venue Address */}
-              <p
-                style={{
-                  fontSize: '0.92rem',
-                  color: '#555',
-                  margin: '0 0 18px 0',
-                  lineHeight: '1.4',
-                  whiteSpace: 'pre-line'
-                }}
-              >
-                {event.venueAddress}
-              </p>
+              {event.venueAddress && (
+                <p
+                  style={{
+                    fontSize: '0.92rem',
+                    color: '#555',
+                    margin: '0 0 18px 0',
+                    lineHeight: '1.4',
+                    whiteSpace: 'pre-line'
+                  }}
+                >
+                  {event.venueAddress}
+                </p>
+              )}
 
               {/* Google Maps Button */}
               <a

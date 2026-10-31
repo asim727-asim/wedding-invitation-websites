@@ -167,14 +167,13 @@ export default function App() {
       {/* Wedding Events & Venues with Google Maps */}
       <EventsSection />
 
-      {/* Lower Combined Section (RSVP, Compliments, Thank You) */}
+      {/* Lower Combined Section (Compliments, Thank You) */}
       <div
         className="lower-sections-wrapper"
         style={{
           backgroundImage: `linear-gradient(to bottom, #fffbf7 0%, rgba(255, 255, 255, 0.65) 120px, rgba(255, 255, 255, 0.65) 100%), url(${weddingData.lowerSectionBg})`
         }}
       >
-        <RSVPSection />
         <ComplimentsSection />
         <ThankYouSection />
       </div>

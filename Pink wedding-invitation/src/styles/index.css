@@ -13,7 +13,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   min-height: 100%;
   color: #fff;
@@ -135,14 +136,22 @@ h1.hero-names-cursive {
   text-align: center;
   margin: 15px 0;
   font-family: 'Great Vibes', 'Alex Brush', cursive;
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 400;
   line-height: 1.25;
 }
 
+.groom-name {
+  font-family: 'Alex Brush', cursive;
+}
+
+.bride-name {
+  font-family: 'Great Vibes', cursive;
+}
+
 @media (max-width: 480px) {
   h1.hero-names-cursive {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -150,7 +159,7 @@ h1.hero-names-cursive {
   color: #ffb6c1;
   text-shadow: 0 0 18px rgba(255, 117, 140, 0.7);
   margin: 6px 0;
-  font-family: 'Great Vibes', 'Alex Brush', cursive;
+  font-family: 'Alex Brush', 'Great Vibes', cursive;
   font-size: 2.3rem;
   display: block;
 }
@@ -211,11 +220,11 @@ h1.hero-names-cursive {
   color: #333;
   text-align: center;
   background-color: #fffbf7;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  min-height: 75vh;
-  padding: 40px 20px;
+  padding: 15px 20px 15px;
   display: flex;
+  flex-direction: column;
   position: relative;
   overflow: hidden;
 }
@@ -269,7 +278,7 @@ h1.hero-names-cursive {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 60px 20px;
+  padding: 30px 20px 60px;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -476,6 +485,7 @@ h1.hero-names-cursive {
     gap: 12px;
     padding: 0 15px;
   }
+
   .heart-scratch-card {
     width: 27vw;
     min-width: 75px;
@@ -484,9 +494,11 @@ h1.hero-names-cursive {
     min-height: 75px;
     max-height: 110px;
   }
+
   .scratch-date {
     font-size: clamp(11px, 3.2vw, 16px);
   }
+
   .scratch-date.long-title {
     font-size: clamp(9px, 2.5vw, 13px);
   }
@@ -496,6 +508,7 @@ h1.hero-names-cursive {
   .heart-scratch-container {
     gap: 8px;
   }
+
   .heart-scratch-card {
     width: 28vw;
     height: 28vw;
@@ -560,7 +573,7 @@ h1.hero-names-cursive {
 .venue-section {
   text-align: center;
   background-color: #fffbf7;
-  padding: 50px 20px;
+  padding: 40px 20px 15px;
 }
 
 .venue-container {
@@ -720,7 +733,7 @@ h1.hero-names-cursive {
 .compliments-section {
   text-align: center;
   background-color: transparent;
-  padding: 25px 24px 10px;
+  padding: 10px 24px 0;
   position: relative;
   overflow: hidden;
 }
@@ -800,25 +813,32 @@ h1.hero-names-cursive {
   letter-spacing: 2px;
   margin-bottom: 0;
   font-size: 1.1rem;
+  position: relative;
+  z-index: 10;
 }
 
 /* Thank You Section */
 .thankyou-section {
   text-align: center;
   background-color: transparent;
-  padding: 20px 15px 35px;
+  padding: 0 15px 30px;
+  position: relative;
+  isolation: isolate;
 }
 
 .thankyou-container {
   max-width: 320px;
   margin: 0 auto;
+  position: relative;
 }
 
 .thankyou-card-wrapper {
   width: 100%;
-  margin: 0 auto;
+  margin: -70px auto 0;
   display: block;
   position: relative;
+  overflow: hidden;
+  border-radius: 14px;
 }
 
 .thankyou-img {
@@ -836,12 +856,12 @@ h1.hero-names-cursive {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 72%;
+  width: 74%;
   display: flex;
   position: absolute;
-  top: 67%;
-  left: 10%;
-  transform: translateY(-50%) rotate(-7.5deg);
+  top: 69.5%;
+  left: 45%;
+  transform: translate(-50%, -50%) rotate(-10.5deg);
 }
 
 .ty-main {
@@ -856,22 +876,43 @@ h1.hero-names-cursive {
 .ty-sub {
   color: #9c2749;
   letter-spacing: 1px;
-  margin-top: 3px;
+  margin: 4px 0 6px 0;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 0.82rem;
+  font-size: 1.15rem;
   font-style: italic;
   font-weight: 600;
+  line-height: 1.25;
+}
+
+.ty-developed {
+  color: #c43360;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.95);
+  font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+  font-size: 1.10rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-top: 6px;
+  line-height: 1.2;
 }
 
 @media (max-width: 480px) {
   .thankyou-container {
     max-width: 280px;
+    margin: -48px auto 0 auto;
   }
+
   .ty-main {
     font-size: 1.95rem;
   }
+
   .ty-sub {
-    font-size: 0.72rem;
+    font-size: 1rem;
+    margin: 3px 0 5px 0;
+  }
+
+  .ty-developed {
+    font-size: 1rem;
+    margin-top: 4px;
   }
 }
 
@@ -978,4 +1019,3 @@ h1.hero-names-cursive {
   top: 0;
   left: -6px;
 }
-

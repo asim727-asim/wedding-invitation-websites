@@ -9,19 +9,17 @@ export const weddingData = {
     initials: "A & F",
     title: "Asim & Farheen — Wedding Invitation",
     groom: {
-      name: "Asim Zahid Ansari",
-      arabicName: "عاصم زاہد انصاری",
+      name: "Asim Ansari",
       title: "THE GROOM",
       relation: "Son of",
       fatherName: "Zahid Ansari",
-      motherName: "Sadaf Khan"
+      motherName: "Sadaf Ansari"
     },
     bride: {
-      name: "Farheen Ahamed Shaikh",
-      arabicName: "فرحین احمد شیخ",
+      name: "Farheen Shaikh",
       title: "THE BRIDE",
       relation: "Daughter of",
-      fatherName: "Ahamed Shaikh",
+      fatherName: "Ahamed Shabbir Shaikh",
       motherName: "Rehana Shaikh"
     }
   },
@@ -70,16 +68,16 @@ export const weddingData = {
   events: [
     {
       id: "nikkah",
-      badgeTitle: "Nikkah Ceremony",
+      badgeTitle: "Nikkah Khwani",
       badgeIcon: "star",
       image: "/assets/masjid-CpSqpTFh.png",
-      imageAlt: "Noor-e-Mohammadi Ahle Sunnat Masjid",
-      date: "Friday, 18 December",
-      time: "⏰ After Jumma Namaz at",
-      venueName: "Noor-e-Mohammadi Ahle Sunnat Masjid (Sunni Masjid)",
-      venueNameHindi: "नूर-इ-मोहम्मदी अहले सुन्नत मस्जिद (सुन्नी मस्जिद)",
-      venueAddress: "20, Bandra Kurla Complex Rd, G Block BKC, Bharat Nagar,\nBandra East, Mumbai, Maharashtra 400051",
-      mapUrl: "https://maps.app.goo.gl/Zo9n4jynEsmJMaC66",
+      imageAlt: "DARUL ULOOM MEHBOOB-E-SUBHANI",
+      date: "Friday, 18 December 2026",
+      time: "(8th Rajab ul Murajjab 1448 Hijri)\n⏰ After Jumma Namaz at",
+      venueName: "DARUL ULOOM MEHBOOB-E-SUBHANI",
+      venueNameHindi: "",
+      venueAddress: "Kurla West, Mumbai, Maharashtra 400070",
+      mapUrl: "https://maps.app.goo.gl/Cfn1cW3VWcUXx5yR8",
       buttonStyle: "primary"
     },
     {
@@ -117,11 +115,11 @@ export const weddingData = {
     symbol: "❧",
     members: [
       {
-        name: "Zahid Ansari & Sadaf Khan",
+        name: "Zahid Ansari & Sadaf Ansari",
         role: "Groom's Parents"
       },
       {
-        name: "Ahamed Shaikh & Rehana Shaikh",
+        name: "Ahamed Shabbir Shaikh & Rehana Shaikh",
         role: "Bride's Parents"
       }
     ],
@@ -133,7 +131,8 @@ export const weddingData = {
     image: "/assets/tq-DoE2cUgm.png",
     imageAlt: "Thank You",
     mainText: "Thank You",
-    subText: "For your blessings & love"
+    subText: "For your blessings & love",
+    developedBy: "Developed By Asim Ansari"
   },
 
   // Footer & Brand Credit

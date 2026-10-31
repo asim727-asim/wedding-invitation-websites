@@ -6,12 +6,12 @@ export default function DetailsSection() {
 
   return (
     <section id="detailsSection" className="details-section">
-      <div className="content-wrapper scroll-animate" style={{ textAlign: 'center', padding: '25px 15px' }}>
+      <div className="content-wrapper scroll-animate" style={{ textAlign: 'center', padding: '5px 15px 10px' }}>
         {/* Islamic Bismillah */}
         <h2
           style={{
             fontSize: '1.9rem',
-            marginBottom: '8px',
+            margin: '0 0 8px 0',
             fontWeight: 'normal',
             color: '#e5a0ae',
             fontFamily: "'Amiri', serif",
@@ -62,7 +62,7 @@ export default function DetailsSection() {
             border: '1px solid #f3b6c3',
             borderRadius: '18px',
             padding: '24px 20px',
-            marginBottom: '20px',
+            marginBottom: '6px',
             boxShadow: '0 8px 30px rgba(229, 160, 174, 0.12)'
           }}
         >
@@ -81,8 +81,8 @@ export default function DetailsSection() {
           </span>
           <h3
             style={{
-              fontFamily: "'Great Vibes', 'Alex Brush', cursive",
-              fontSize: '2.8rem',
+              fontFamily: "'Alex Brush', 'Great Vibes', cursive",
+              fontSize: '3.1rem',
               color: '#33252a',
               margin: '0 0 4px 0',
               fontWeight: 'normal'
@@ -90,19 +90,6 @@ export default function DetailsSection() {
           >
             {couple.groom.name}
           </h3>
-          {couple.groom.arabicName && (
-            <p
-              dir="rtl"
-              style={{
-                fontFamily: "'Amiri', serif",
-                fontSize: '1.5rem',
-                color: '#e5a0ae',
-                margin: '0 0 8px 0'
-              }}
-            >
-              {couple.groom.arabicName}
-            </p>
-          )}
           <div style={{ width: '40px', height: '1px', background: '#f3b6c3', margin: '12px auto' }} />
           <p
             style={{
@@ -119,7 +106,7 @@ export default function DetailsSection() {
           <p
             style={{
               margin: '4px 0 0 0',
-              fontSize: '1.1rem',
+              fontSize: '1.3rem',
               color: '#33252a',
               fontWeight: '700'
             }}
@@ -135,20 +122,21 @@ export default function DetailsSection() {
             alignItems: 'center',
             justifyContent: 'center',
             gap: '15px',
-            margin: '20px 0'
+            margin: '4px 0 10px 0'
           }}
         >
-          <div style={{ width: '50px', height: '1px', background: '#f3b6c3' }} />
+          <div style={{ width: '45px', height: '1px', background: '#f3b6c3' }} />
           <span
             style={{
-              fontFamily: "'Great Vibes', 'Alex Brush', cursive",
-              fontSize: '2.5rem',
+              fontFamily: "'Alex Brush', 'Great Vibes', cursive",
+              fontSize: '2rem',
+              lineHeight: '1',
               color: '#e5a0ae'
             }}
           >
             &
           </span>
-          <div style={{ width: '50px', height: '1px', background: '#f3b6c3' }} />
+          <div style={{ width: '45px', height: '1px', background: '#f3b6c3' }} />
         </div>
 
         {/* Bride Card */}
@@ -159,7 +147,7 @@ export default function DetailsSection() {
             border: '1px solid #f3b6c3',
             borderRadius: '18px',
             padding: '24px 20px',
-            marginBottom: '35px',
+            marginBottom: '15px',
             boxShadow: '0 8px 30px rgba(229, 160, 174, 0.12)'
           }}
         >
@@ -179,7 +167,7 @@ export default function DetailsSection() {
           <h3
             style={{
               fontFamily: "'Great Vibes', 'Alex Brush', cursive",
-              fontSize: '2.8rem',
+              fontSize: '3.1rem',
               color: '#33252a',
               margin: '0 0 4px 0',
               fontWeight: 'normal'
@@ -187,19 +175,6 @@ export default function DetailsSection() {
           >
             {couple.bride.name}
           </h3>
-          {couple.bride.arabicName && (
-            <p
-              dir="rtl"
-              style={{
-                fontFamily: "'Amiri', serif",
-                fontSize: '1.5rem',
-                color: '#e5a0ae',
-                margin: '0 0 8px 0'
-              }}
-            >
-              {couple.bride.arabicName}
-            </p>
-          )}
           <div style={{ width: '40px', height: '1px', background: '#f3b6c3', margin: '12px auto' }} />
           <p
             style={{
@@ -216,7 +191,7 @@ export default function DetailsSection() {
           <p
             style={{
               margin: '4px 0 0 0',
-              fontSize: '1.1rem',
+              fontSize: '1.3rem',
               color: '#33252a',
               fontWeight: '700'
             }}
@@ -226,11 +201,11 @@ export default function DetailsSection() {
         </div>
 
         {/* Pink Bow Ornament */}
-        <div style={{ textAlign: 'center', margin: '30px auto 10px auto' }}>
+        <div style={{ textAlign: 'center', margin: '5px auto 5px auto' }}>
           <img
             src={details.bowOrnament}
             alt="Pink Bow Ornament"
-            style={{ width: '100%', maxWidth: '250px', height: 'auto', display: 'inline-block' }}
+            style={{ width: '100%', maxWidth: '230px', height: 'auto', display: 'inline-block' }}
           />
         </div>
       </div>

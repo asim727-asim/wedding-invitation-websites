@@ -38,24 +38,10 @@ export default function HeroSection({
 
         <div id="textOverlay" className={`text-overlay ${isRevealed ? 'reveal' : ''}`}>
           <h1 className="hero-names-cursive">
-            {couple.groom.name}
+            <span className="groom-name">{couple.groom.name}</span>
             <span className="hero-ampersand">&</span>
-            {couple.bride.name}
+            <span className="bride-name">{couple.bride.name}</span>
           </h1>
-          {couple.groom.arabicName && couple.bride.arabicName && (
-            <p
-              dir="rtl"
-              style={{
-                fontFamily: "'Amiri', serif",
-                fontSize: '1.25rem',
-                color: '#ffb6c1',
-                margin: '2px 0 8px 0',
-                textShadow: '0 2px 8px rgba(0,0,0,0.8)'
-              }}
-            >
-              {couple.groom.arabicName} &amp; {couple.bride.arabicName}
-            </p>
-          )}
           <img src={hero.ringImage} alt="Wedding Rings" className="ring-image" />
         </div>
 
