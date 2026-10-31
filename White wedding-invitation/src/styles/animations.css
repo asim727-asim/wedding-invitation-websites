@@ -1,0 +1,66 @@
+/* Wedding Invitation Custom Keyframes & Utility Animations */
+
+@keyframes sweepShine {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  25% {
+    transform: translateX(150%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(150%) skewX(-20deg);
+  }
+}
+
+.scratch-shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.75) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: sweepShine 3.5s infinite ease-in-out;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float {
+  animation: floatGentle 4s infinite ease-in-out;
+}
+
+/* Gold Text Styling */
+.gold-text-glow {
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5),
+               -1px -1px 0px rgba(90, 60, 10, 0.6),
+               0px 4px 8px rgba(218, 165, 32, 0.4);
+}
+

@@ -1,0 +1,94 @@
+/* Keyframe Animations */
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes tapAnimation {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(5px) scale(0.9);
+  }
+}
+
+@keyframes buttonPulseShimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 200%;
+  }
+}
+
+@keyframes floatHeart {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40px) scale(1.5) rotate(45deg);
+  }
+}
+
+@keyframes musicPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 117, 140, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(255, 117, 140, 0);
+  }
+}
+
+@keyframes floatScroll {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 5px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-5px);
+  }
+  50% {
+    transform: translate(5px);
+  }
+  75% {
+    transform: translate(-5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+

@@ -1,0 +1,58 @@
+@import './styles/animations.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light only;
+  --bg-cream: #F9F0E0;
+  --text-gold: #806b43;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F9F0E0;
+  color: #806b43;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gld-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.gld-script {
+  font-family: 'Cookie', cursive;
+}
+
+.font-arabic {
+  font-family: 'Amiri', serif;
+}
+
+/* Custom crisp rendering for hero titles */
+.hero-crisp-text,
+.hero-crisp-text * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #806b43 !important;
+  -webkit-text-fill-color: #806b43 !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F9F0E0;
+}
+::-webkit-scrollbar-thumb {
+  background: #806b4355;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #806b4399;
+}

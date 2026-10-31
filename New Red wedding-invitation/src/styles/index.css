@@ -1,0 +1,38 @@
+@import './animations.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-cormorant: 'Cormorant Garamond', serif;
+  --font-cinzel: 'Cinzel', serif;
+  --font-eb: 'EB Garamond', serif;
+  --font-calligraphy: 'Pinyon Script', cursive;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #120404;
+  color: #3d1208;
+  font-family: 'EB Garamond', 'Cormorant Garamond', serif;
+  overflow-x: clip;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for modern browsers */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #120404;
+}
+::-webkit-scrollbar-thumb {
+  background: #6b2c1a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8b1a1a;
+}
