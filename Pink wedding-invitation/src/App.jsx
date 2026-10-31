@@ -3,10 +3,8 @@ import HeroSection from './components/HeroSection';
 import DetailsSection from './components/DetailsSection';
 import ScratchSection from './components/ScratchSection';
 import EventsSection from './components/EventsSection';
-import RSVPSection from './components/RSVPSection';
 import ComplimentsSection from './components/ComplimentsSection';
 import ThankYouSection from './components/ThankYouSection';
-import Footer from './components/Footer';
 import MusicToggle from './components/MusicToggle';
 import FloatingHearts from './components/FloatingHearts';
 import { weddingData } from './data/weddingData';
@@ -177,9 +175,6 @@ export default function App() {
         <ComplimentsSection />
         <ThankYouSection />
       </div>
-
-      {/* Modern Footer */}
-      <Footer />
 
       {/* SVG Clip Path for Heart Scratch Cards */}
       <svg width="0" height="0" style={{ position: 'absolute', width: 0, height: 0 }} aria-hidden="true">
