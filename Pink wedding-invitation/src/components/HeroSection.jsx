@@ -41,7 +41,7 @@ export default function HeroSection({
             <span className="groom-name">{couple.groom.name}</span>
             <img
               src={hero.emblemImage}
-              alt="Pastel Pink United in Nikah Emblem"
+              alt="Ornate Golden Weds Emblem"
               className="hero-emblem"
             />
             <span className="bride-name">{couple.bride.name}</span>

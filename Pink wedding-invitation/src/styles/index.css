@@ -119,7 +119,7 @@ video {
   transition: clip-path 2.5s ease-in-out, opacity 1.5s ease-in-out;
   display: flex;
   position: absolute;
-  top: calc(50% + 50px);
+  top: calc(50% + 15px);
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -134,7 +134,7 @@ h1.hero-names-cursive {
   letter-spacing: 1px;
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 117, 140, 0.6);
   text-align: center;
-  margin: 15px 0;
+  margin: 10px 0 6px 0;
   font-family: 'Great Vibes', 'Alex Brush', cursive;
   font-size: 3rem;
   font-weight: 400;
@@ -153,8 +153,8 @@ h1.hero-names-cursive {
 
 .hero-emblem {
   display: block;
-  margin: 10px auto;
-  width: 190px;
+  margin: 6px auto;
+  width: 180px;
   max-width: 65vw;
   height: auto;
   filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 16px rgba(255, 182, 193, 0.5));
@@ -162,13 +162,29 @@ h1.hero-names-cursive {
 }
 
 @media (max-width: 480px) {
+  .text-overlay {
+    top: calc(50% + 8px);
+  }
+
   h1.hero-names-cursive {
-    font-size: 2.4rem;
+    font-size: 2.25rem;
+    margin: 8px 0 4px 0;
   }
 
   .hero-emblem {
-    width: 150px;
-    margin: 8px auto;
+    width: 140px;
+    margin: 5px auto;
+  }
+
+  .ring-image {
+    width: 95px;
+    margin-top: 2px;
+  }
+
+  .scroll-down-box {
+    bottom: 30px;
+    padding: 8px 16px;
+    font-size: 0.64rem;
   }
 }
 
@@ -182,8 +198,8 @@ h1.hero-names-cursive {
 }
 
 .ring-image {
-  width: 120px;
-  margin-top: 12px;
+  width: 110px;
+  margin-top: 4px;
   display: block;
   filter: drop-shadow(0 4px 12px rgba(229, 160, 174, 0.4));
 }
@@ -207,7 +223,7 @@ h1.hero-names-cursive {
   animation: 2s ease-in-out infinite floatScroll;
   display: flex;
   position: absolute;
-  bottom: 80px;
+  bottom: 45px;
   left: 50%;
   transform: translate(-50%);
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
