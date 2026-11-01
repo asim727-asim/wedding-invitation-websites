@@ -108,7 +108,7 @@ export const weddingData = {
     },
     {
       id: "walima",
-      badgeTitle: "Walima Ceremony",
+      badgeTitle: "Dawat-e-Walima",
       badgeIcon: "crown",
       image: "/assets/ven-C7X61fLg.png",
       imageAlt: "FLAMINGO BANQUET PARTY HALL",
