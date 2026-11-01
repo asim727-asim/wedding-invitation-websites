@@ -1058,6 +1058,7 @@ h1.hero-names-cursive {
   letter-spacing: 0.5px;
   margin-top: 6px;
   line-height: 1.2;
+  white-space: nowrap;
 }
 
 @media (max-width: 480px) {
@@ -1076,8 +1077,9 @@ h1.hero-names-cursive {
   }
 
   .ty-developed {
-    font-size: 0.5rem;
-    margin-top: 4px;
+    font-size: 0.82rem;
+    margin-top: 5px;
+    letter-spacing: 0.3px;
   }
 }
 
