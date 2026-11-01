@@ -53,15 +53,27 @@ export const weddingData = {
     backgroundVideo: "/media/weds1.mp4",
     headerTitle: "Save The Date",
     revealButtonText: "Reveal Date",
-    discoverSubtitle: "SCRATCH TO DISCOVER THE DATE",
+    discoverSubtitle: "SCRATCH TO DISCOVER THE DATES",
     cards: [
-      { id: "day", title: "18th" },
-      { id: "month", title: "December" },
-      { id: "year", title: "2026" }
+      { id: "nikkah", title: "18th", subtitle: "NIKKAH" },
+      { id: "walima", title: "19th", subtitle: "WALIMA" },
+      { id: "date", title: "December", subtitle: "2026" }
     ],
     // Countdown Target: Preserves existing configured year 2026 (Nikkah on 18 December)
     countdownTarget: "December 18, 2026 13:30:00",
-    countdownDisplayDate: "18 . 12 . 2026"
+    countdownDisplayDate: "18 . 12 . 2026",
+    eventsSummary: [
+      {
+        title: "NIKKAH",
+        date: "18 December 2026",
+        time: "After Jumma Namaz"
+      },
+      {
+        title: "WALIMA",
+        date: "19 December 2026",
+        time: "After Magrib"
+      }
+    ]
   },
 
   // Wedding Events & Venues
@@ -78,6 +90,20 @@ export const weddingData = {
       venueNameHindi: "",
       venueAddress: "Kurla West, Mumbai, Maharashtra 400070",
       mapUrl: "https://maps.app.goo.gl/Cfn1cW3VWcUXx5yR8",
+      buttonStyle: "primary"
+    },
+    {
+      id: "nikkah",
+      badgeTitle: "Dawat-e-Nikah",
+      badgeIcon: "star",
+      image: "/assets/masjid-CpSqpTFh.png",
+      imageAlt: "Noor-e-Mohammadi Ahle Sunnat Masjid",
+      date: "Friday, 18 December",
+      time: "⏰ After Magrib at",
+      venueName: "Noor-e-Mohammadi Ahle Sunnat Masjid (Sunni Masjid)",
+      venueNameHindi: "नूर-इ-मोहम्मदी अहले सुन्नत मस्जिद (सुन्नी मस्जिद)",
+      venueAddress: "20, Bandra Kurla Complex Rd, G Block BKC, Bharat Nagar,\nBandra East, Mumbai, Maharashtra 400051",
+      mapUrl: "https://maps.app.goo.gl/Zo9n4jynEsmJMaC66",
       buttonStyle: "primary"
     },
     {

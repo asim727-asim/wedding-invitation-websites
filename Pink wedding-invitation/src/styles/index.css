@@ -458,21 +458,46 @@ h1.hero-names-cursive {
   position: absolute;
 }
 
-.scratch-date {
-  color: #fff;
-  text-shadow: 0 1px 3px rgba(80, 20, 40, 0.35);
+.scratch-heart-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.15;
   text-align: center;
   z-index: 2;
+  padding: 0 4px;
+}
+
+.scratch-date {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(80, 20, 40, 0.4);
+  text-align: center;
   white-space: nowrap;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 700;
+  line-height: 1.1;
 }
 
 .scratch-date.long-title {
   letter-spacing: 0.3px;
-  font-size: 1.20rem;
+  font-size: 0.95rem;
   font-weight: 700;
+}
+
+.scratch-heart-subtitle {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(80, 20, 40, 0.4);
+  text-align: center;
+  white-space: nowrap;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-top: 3px;
+  opacity: 0.95;
 }
 
 .scratched-pop {
@@ -496,11 +521,17 @@ h1.hero-names-cursive {
   }
 
   .scratch-date {
-    font-size: clamp(11px, 3.2vw, 16px);
+    font-size: clamp(10px, 3vw, 15px);
   }
 
   .scratch-date.long-title {
-    font-size: clamp(9px, 2.5vw, 13px);
+    font-size: clamp(8px, 2.3vw, 12px);
+  }
+
+  .scratch-heart-subtitle {
+    font-size: clamp(7px, 2vw, 10px);
+    letter-spacing: 0.8px;
+    margin-top: 2px;
   }
 }
 
@@ -512,6 +543,107 @@ h1.hero-names-cursive {
   .heart-scratch-card {
     width: 28vw;
     height: 28vw;
+  }
+
+  .scratch-date {
+    font-size: clamp(9px, 2.8vw, 12px);
+  }
+
+  .scratch-date.long-title {
+    font-size: clamp(7.5px, 2vw, 10px);
+  }
+
+  .scratch-heart-subtitle {
+    font-size: clamp(6.5px, 1.7vw, 8.5px);
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Scratch Events Summary (Nikkah & Walima) */
+.scratch-events-summary {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px;
+  max-width: 480px;
+  margin: 0 auto 30px auto;
+  padding: 0 12px;
+}
+
+.scratch-event-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(229, 160, 174, 0.45);
+  border-radius: 14px;
+  padding: 14px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(229, 160, 174, 0.22);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scratch-event-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(229, 160, 174, 0.3);
+}
+
+.event-badge-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #c43360;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(229, 160, 174, 0.35);
+  width: 100%;
+}
+
+.event-badge-date {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #33252a;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.event-badge-time {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.74rem;
+  font-weight: 500;
+  color: #665;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 480px) {
+  .scratch-events-summary {
+    gap: 10px;
+    padding: 0 8px;
+    margin-bottom: 24px;
+  }
+
+  .scratch-event-card {
+    padding: 10px 6px;
+    border-radius: 10px;
+  }
+
+  .event-badge-label {
+    font-size: 0.72rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 3px;
+  }
+
+  .event-badge-date {
+    font-size: 1.05rem;
+  }
+
+  .event-badge-time {
+    font-size: 0.68rem;
   }
 }
 

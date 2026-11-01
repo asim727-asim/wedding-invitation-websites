@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect, useCallback } from 'react';
 import confetti from 'canvas-confetti';
 
-export default function ScratchCard({ title, onComplete, forceReveal }) {
+export default function ScratchCard({ title, subtitle, onComplete, forceReveal }) {
   const canvasRef = useRef(null);
   const cardRef = useRef(null);
   const [isScratched, setIsScratched] = useState(false);
@@ -180,11 +180,18 @@ export default function ScratchCard({ title, onComplete, forceReveal }) {
       <div className="heart-border">
         <div className="heart-shape">
           <div className="scratch-base">
-            <span
-              className={`scratch-date ${title.length > 5 ? 'long-title' : ''}`}
-            >
-              {title}
-            </span>
+            <div className="scratch-heart-content">
+              <span
+                className={`scratch-date ${title.length > 5 ? 'long-title' : ''}`}
+              >
+                {title}
+              </span>
+              {subtitle && (
+                <span className="scratch-heart-subtitle">
+                  {subtitle}
+                </span>
+              )}
+            </div>
           </div>
 
           <canvas

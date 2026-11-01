@@ -71,6 +71,7 @@ export default function ScratchSection() {
             <ScratchCard
               key={card.id}
               title={card.title}
+              subtitle={card.subtitle}
               onComplete={handleCardComplete}
               forceReveal={revealIndex >= idx}
             />
