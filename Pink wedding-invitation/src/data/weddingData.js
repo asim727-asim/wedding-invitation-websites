@@ -12,15 +12,15 @@ export const weddingData = {
       name: "Asim Ansari",
       title: "THE GROOM",
       relation: "Son of",
-      fatherName: "Zahid Ansari",
-      motherName: "Sadaf Ansari"
+      fatherName: "MR. Zahid Ansari",
+      motherName: "MRS. Sadaf Ansari"
     },
     bride: {
       name: "Farheen Shaikh",
       title: "THE BRIDE",
       relation: "Daughter of",
-      fatherName: "Ahamed Shabbir Shaikh",
-      motherName: "Rehana Shaikh"
+      fatherName: "MR. Ahamed Shabbir Shaikh",
+      motherName: "MRS. Rehana Shaikh"
     }
   },
 
@@ -44,7 +44,7 @@ export const weddingData = {
   details: {
     bismillahArabic: "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ",
     bismillahEnglish: "In the name of Allah,\nthe Most Gracious, the Most Merciful",
-    invitationNote: "With the blessings of Almighty Allah,\njoin us for nikkah and walima reception of",
+    invitationNote: "Together with our families, we joyfully invite you to celebrate our Nikah and Walima and share in the beautiful beginning of our forever.",
     roseWatermark: "/assets/ros-ph1UdIgP.png",
     bowOrnament: "/assets/pinkbow-4m7XbsBA.png"
   },
@@ -138,15 +138,15 @@ export const weddingData = {
 
   // Family Section
   compliments: {
-    title: "Together With Our Families",
+    title: "Together With Our Families And Friends",
     symbol: "❧",
     members: [
       {
-        name: "Zahid Ansari & Sadaf Ansari",
+        name: "MR. Zahid Ansari & MRS. Sadaf Ansari",
         role: "Groom's Parents"
       },
       {
-        name: "Ahamed Shabbir Shaikh & Rehana Shaikh",
+        name: "MR. Ahamed Shabbir Shaikh & MRS. Rehana Shaikh",
         role: "Bride's Parents"
       }
     ],
@@ -161,11 +161,4 @@ export const weddingData = {
     subText: "For your blessings & love",
     developedBy: "Developed By Asim Ansari"
   },
-
-  // Footer & Brand Credit
-  footer: {
-    designerHandle: "@awesome__creation",
-    designerUrl: "https://www.instagram.com/awesome__creation/",
-    tagline: "CONNECT FOR YOUR DIGITAL INVITATION"
-  }
 };

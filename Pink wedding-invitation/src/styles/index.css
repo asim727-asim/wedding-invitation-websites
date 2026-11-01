@@ -182,7 +182,7 @@ h1.hero-names-cursive {
   }
 
   .scroll-down-box {
-    bottom: clamp(90px, 12vh, 115px);
+    bottom: clamp(115px, 14vh, 135px);
     padding: 9px 18px;
     font-size: 0.66rem;
   }
