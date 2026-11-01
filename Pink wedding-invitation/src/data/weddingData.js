@@ -28,6 +28,7 @@ export const weddingData = {
   hero: {
     videoSrc: "/media/curtain-video1.mp4",
     openPromptText: "Open Invitation",
+    emblemImage: "/assets/Pastel Pink United in Nikah Emblem.png",
     ringImage: "/assets/ring1-Zb6HDysx.png",
     scrollDownText: "Scroll Down"
   },
