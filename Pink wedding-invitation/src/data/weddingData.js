@@ -85,7 +85,7 @@ export const weddingData = {
       image: "/assets/masjid-CpSqpTFh.png",
       imageAlt: "DARUL ULOOM MEHBOOB-E-SUBHANI",
       date: "Friday, 18 December 2026",
-      time: "(8th Rajab ul Murajjab 1448 Hijri)\n⏰ After Jumma Namaz at",
+      time: "⏰ After Jumma Namaz at",
       venueName: "DARUL ULOOM MEHBOOB-E-SUBHANI",
       venueNameHindi: "",
       venueAddress: "Kurla West, Mumbai, Maharashtra 400070",
