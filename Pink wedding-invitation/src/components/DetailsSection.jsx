@@ -13,7 +13,7 @@ export default function DetailsSection() {
             fontSize: '1.9rem',
             margin: '0 0 8px 0',
             fontWeight: 'normal',
-            color: '#e5a0ae',
+            color: '#fc8ca2ff',
             fontFamily: "'Amiri', serif",
             letterSpacing: '1px'
           }}

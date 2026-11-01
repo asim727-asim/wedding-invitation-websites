@@ -165,7 +165,7 @@ h1.hero-names-cursive {
 }
 
 .ring-image {
-  width: 90px;
+  width: 120px;
   margin-top: 12px;
   display: block;
   filter: drop-shadow(0 4px 12px rgba(229, 160, 174, 0.4));
@@ -222,7 +222,7 @@ h1.hero-names-cursive {
   background-color: #fffbf7;
   justify-content: flex-start;
   align-items: center;
-  padding: 15px 20px 15px;
+  padding: 40px 20px 15px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -471,7 +471,7 @@ h1.hero-names-cursive {
 
 .scratch-date.long-title {
   letter-spacing: 0.3px;
-  font-size: 0.95rem;
+  font-size: 1.20rem;
   font-weight: 700;
 }
 
@@ -878,7 +878,7 @@ h1.hero-names-cursive {
   letter-spacing: 1px;
   margin: 4px 0 6px 0;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.15rem;
+  font-size: 1.20rem;
   font-style: italic;
   font-weight: 600;
   line-height: 1.25;
@@ -911,7 +911,7 @@ h1.hero-names-cursive {
   }
 
   .ty-developed {
-    font-size: 1rem;
+    font-size: 0.5rem;
     margin-top: 4px;
   }
 }

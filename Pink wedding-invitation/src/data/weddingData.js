@@ -50,7 +50,7 @@ export const weddingData = {
 
   // Scratch & Countdown Section
   scratchSection: {
-    backgroundVideo: "/media/weds2.mp4",
+    backgroundVideo: "/media/weds1.mp4",
     headerTitle: "Save The Date",
     revealButtonText: "Reveal Date",
     discoverSubtitle: "SCRATCH TO DISCOVER THE DATE",
@@ -97,7 +97,7 @@ export const weddingData = {
   ],
 
   // Background Pattern for lower sections
-  lowerSectionBg: "/assets/bg-CjJQzhxh.jpg",
+  lowerSectionBg: "/assets/bg-CjJQzhxh2.png",
 
   // RSVP Section
   rsvp: {
