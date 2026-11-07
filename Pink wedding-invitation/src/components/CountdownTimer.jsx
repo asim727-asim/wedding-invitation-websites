@@ -64,29 +64,11 @@ export default function CountdownTimer({ show }) {
         </div>
       )}
 
-      <p
-        className="premium-font bismillah"
-        style={{
-          marginBottom: '10px',
-          letterSpacing: '3px',
-          textTransform: 'uppercase',
-          fontSize: '0.85rem',
-          color: '#c43360',
-          fontWeight: '700'
-        }}
-      >
-        {scratchSection.headerTitle}
+      <p className="countdown-eyebrow">
+        COUNTDOWN TO OUR NIKKAH
       </p>
 
-      <h2
-        className="couple-names countdown-date"
-        style={{
-          margin: '10px 0 30px 0',
-          fontSize: '2.2rem',
-          fontFamily: "'Cormorant Garamond', serif",
-          color: '#33252a'
-        }}
-      >
+      <h2 className="countdown-date">
         {scratchSection.countdownDisplayDate}
       </h2>
 

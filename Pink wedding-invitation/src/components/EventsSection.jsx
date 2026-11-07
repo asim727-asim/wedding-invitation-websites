@@ -10,146 +10,82 @@ export default function EventsSection() {
       <div className="venue-container scroll-animate">
         {events.map((event, index) => {
           const isPrimary = event.buttonStyle === 'primary';
+          const isMasjid = event.id === 'nikkah';
 
           return (
             <div
-              key={event.id}
-              className={`event-card scroll-animate stagger-anim delay-${index + 1}`}
-              style={{
-                background: '#ffffff',
-                border: '1px solid #f3b6c3',
-                borderRadius: '18px',
-                padding: '24px 20px',
-                marginBottom: index === events.length - 1 ? '5px' : '25px',
-                boxShadow: '0 6px 22px rgba(229, 160, 174, 0.1)',
-                textAlign: 'center'
-              }}
+              key={`${event.id}-${index}`}
+              className={`luxury-event-card scroll-animate stagger-anim delay-${index + 1}`}
             >
-              {/* Badge */}
-              <div
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '6px',
-                  background: isPrimary ? '#e5a0ae' : '#faf2e6',
-                  color: isPrimary ? '#ffffff' : '#33252a',
-                  border: isPrimary ? 'none' : '1px solid #f3b6c3',
-                  padding: '5px 16px',
-                  borderRadius: '20px',
-                  fontSize: '0.95rem',
-                  fontWeight: '600',
-                  letterSpacing: '1.2px',
-                  textTransform: 'uppercase',
-                  marginBottom: '14px'
-                }}
-              >
+              {/* Event Category Badge */}
+              <div className={`event-header-badge ${isPrimary ? 'badge-primary' : 'badge-champagne'}`}>
                 {event.badgeIcon === 'crown' ? (
-                  <Crown size={18} style={{ color: '#c43360' }} />
+                  <Crown size={15} className="badge-icon-crown" />
                 ) : (
-                  <Star size={18} style={{ color: '#ffffff', fill: '#ffffff' }} />
+                  <Star size={15} className="badge-icon-star" />
                 )}
-                {event.badgeTitle}
+                <span>{event.badgeTitle}</span>
               </div>
 
               {/* Venue Illustration */}
-              <img
-                src={event.image}
-                alt={event.imageAlt}
-                className={event.id === 'nikah' ? 'masjid-image' : 'venue-image'}
-              />
+              <div className="event-illustration-container">
+                <img
+                  src={event.image}
+                  alt={event.imageAlt}
+                  className={isMasjid ? 'masjid-image' : 'venue-image'}
+                  loading="lazy"
+                />
+              </div>
 
-              {/* Date */}
-              <h3
-                style={{
-                  fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: '1.65rem',
-                  color: '#33252a',
-                  margin: '4px 0'
-                }}
-              >
+              {/* Event Date Heading */}
+              <h3 className="event-date-display">
                 {event.date}
               </h3>
 
-              {/* Time */}
-              <p
-                style={{
-                  fontFamily: "'Montserrat', sans-serif",
-                  fontSize: '1.1rem',
-                  color: '#c43360',
-                  fontWeight: '700',
-                  margin: '6px 0 10px 0',
-                  whiteSpace: 'pre-line'
-                }}
-              >
+              {/* Event Time */}
+              <p className="event-time-display">
                 {event.time}
               </p>
 
-              {/* Accent Divider */}
-              <div
-                style={{
-                  height: '1px',
-                  background: '#f3b6c3',
-                  width: '60px',
-                  margin: '10px auto'
-                }}
-              />
+              {/* Subtle Ornamental Hairline */}
+              <div className="event-hairline-separator">
+                <span className="hairline-line" />
+                <span className="hairline-dot">✦</span>
+                <span className="hairline-line" />
+              </div>
 
               {/* Venue Name (English) */}
-              <p
-                style={{
-                  fontSize: '1.35rem',
-                  fontWeight: '700',
-                  color: '#33252a',
-                  margin: '10px 0 2px 0'
-                }}
-              >
-                📍 {event.venueName}
-              </p>
+              <h4 className="event-venue-heading">
+                {event.venueName}
+              </h4>
 
               {/* Venue Name (Hindi) */}
               {event.venueNameHindi && (
-                <p
-                  style={{
-                    fontSize: '1.05rem',
-                    fontWeight: '600',
-                    color: '#c43360',
-                    margin: '2px 0 8px 0'
-                  }}
-                >
+                <p className="event-venue-hindi">
                   {event.venueNameHindi}
                 </p>
               )}
 
               {/* Venue Address */}
               {event.venueAddress && (
-                <p
-                  style={{
-                    fontSize: '0.92rem',
-                    color: '#555',
-                    margin: '0 0 18px 0',
-                    lineHeight: '1.4',
-                    whiteSpace: 'pre-line'
-                  }}
-                >
+                <p className="event-venue-address">
                   {event.venueAddress}
                 </p>
               )}
 
               {/* Google Maps Button */}
-              <a
-                href={event.mapUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={isPrimary ? 'map-btn' : 'map-btn-cream'}
-              >
-                <MapPin
-                  size={16}
-                  style={{
-                    color: isPrimary ? '#ffffff' : '#c43360'
-                  }}
-                />
-                View Location on Google Maps
-              </a>
+              <div className="event-map-btn-wrapper">
+                <a
+                  href={event.mapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={isPrimary ? 'luxury-map-btn primary' : 'luxury-map-btn champagne'}
+                  aria-label={`View ${event.venueName} location on Google Maps`}
+                >
+                  <MapPin size={16} className="map-btn-icon" />
+                  <span>View Location on Google Maps</span>
+                </a>
+              </div>
             </div>
           );
         })}

@@ -28,9 +28,22 @@ export default function HeroSection({
         </video>
 
         {!hasStarted && (
-          <div id="playOverlay" className="overlay" onClick={onStart}>
+          <div
+            id="playOverlay"
+            className="overlay"
+            onClick={onStart}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                onStart();
+              }
+            }}
+            aria-label="Tap to Open Wedding Invitation"
+          >
             <div className="play-button">
-              <Pointer className="hand-icon" size={38} />
+              <Pointer className="hand-icon" size={32} />
             </div>
             <p className="tap-text">{hero.openPromptText}</p>
           </div>

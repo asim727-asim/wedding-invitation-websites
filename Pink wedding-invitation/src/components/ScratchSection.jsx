@@ -46,8 +46,8 @@ export default function ScratchSection() {
       />
 
       <div className="content-wrapper">
-        <p className="premium-font stagger-anim delay-1" style={{ fontSize: '1.35rem' }}>
-          Scratch all three circles
+        <p className="scratch-instruction-text stagger-anim delay-1">
+          Scratch all three hearts
         </p>
 
         <div className="reveal-btn-container stagger-anim delay-2">
