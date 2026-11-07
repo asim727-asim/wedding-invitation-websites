@@ -56,8 +56,9 @@ export const weddingData = {
     revealButtonText: "Reveal Date",
     discoverSubtitle: "SCRATCH TO DISCOVER THE DATES",
     cards: [
-      { id: "walima", title: "19th", subtitle: "WALIMA" },
-      { id: "date", title: "December", subtitle: "2026" }
+      { id: "day", title: "19th" },
+      { id: "month", title: "December" },
+      { id: "year", title: "2026" }
     ],
     // Countdown Target: Walima on 19 December 2026
     countdownTarget: "December 19, 2026 18:00:00",

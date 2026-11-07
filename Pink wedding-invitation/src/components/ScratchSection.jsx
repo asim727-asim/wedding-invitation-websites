@@ -47,7 +47,7 @@ export default function ScratchSection() {
 
       <div className="content-wrapper">
         <p className="scratch-instruction-text stagger-anim delay-1">
-          Scratch both hearts
+          Scratch all three hearts
         </p>
 
         <div className="reveal-btn-container stagger-anim delay-2">
