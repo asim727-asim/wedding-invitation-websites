@@ -60,7 +60,7 @@ export default function HeroSection({
 
         <a
           href="#detailsSection"
-          className={`scroll-down-box ${isRevealed ? 'show' : ''}`}
+          className={`scroll-down-box scroll-down-button ${isRevealed ? 'show' : ''}`}
         >
           <span className="scroll">{hero.scrollDownText}</span>
           <div className="scroll-arrow">

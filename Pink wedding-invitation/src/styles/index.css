@@ -315,13 +315,14 @@ h1.hero-names-cursive {
 }
 
 /* Floating Scroll Down Pill */
-.scroll-down-box {
+.scroll-down-box,
+.scroll-down-button {
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
   color: #fff9f6;
   letter-spacing: 2.2px;
   text-transform: uppercase;
-  z-index: 20;
+  z-index: 30;
   background: rgba(30, 20, 26, 0.45);
   border: 1px solid rgba(235, 221, 195, 0.4);
   border-radius: 999px;
@@ -335,7 +336,7 @@ h1.hero-names-cursive {
   animation: 2.4s ease-in-out infinite floatScroll;
   display: flex;
   position: absolute;
-  bottom: max(68px, calc(env(safe-area-inset-bottom, 0px) + 54px));
+  bottom: max(100px, calc(env(safe-area-inset-bottom, 0px) + 90px));
   left: 50%;
   transform: translate(-50%, 0);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.25);
@@ -344,12 +345,14 @@ h1.hero-names-cursive {
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.scroll-down-box.show {
+.scroll-down-box.show,
+.scroll-down-button.show {
   opacity: 1;
   pointer-events: auto;
 }
 
-.scroll-down-box span.scroll {
+.scroll-down-box span.scroll,
+.scroll-down-button span.scroll {
   line-height: 1;
   color: #fff9f6;
 }
@@ -1485,7 +1488,7 @@ h1.hero-names-cursive {
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   display: flex;
   position: fixed;
-  bottom: max(24px, calc(env(safe-area-inset-bottom, 0px) + 20px));
+  bottom: max(32px, calc(env(safe-area-inset-bottom, 0px) + 24px));
   right: max(16px, calc(env(safe-area-inset-right, 0px) + 12px));
   box-shadow: 0 6px 20px rgba(101, 60, 75, 0.18), inset 0 1px 1px rgba(255, 255, 255, 0.6);
 }
