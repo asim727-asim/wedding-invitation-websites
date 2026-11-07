@@ -29,9 +29,9 @@ export default function ScratchSection() {
 
   const handleRevealAll = () => {
     if (revealIndex >= 0) return;
-    setRevealIndex(0);
-    setTimeout(() => setRevealIndex(1), 300);
-    setTimeout(() => setRevealIndex(2), 600);
+    scratchSection.cards.forEach((_, idx) => {
+      setTimeout(() => setRevealIndex(idx), idx * 300);
+    });
   };
 
   return (
@@ -47,7 +47,7 @@ export default function ScratchSection() {
 
       <div className="content-wrapper">
         <p className="scratch-instruction-text stagger-anim delay-1">
-          Scratch all three hearts
+          Scratch both hearts
         </p>
 
         <div className="reveal-btn-container stagger-anim delay-2">

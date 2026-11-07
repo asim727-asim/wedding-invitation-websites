@@ -65,7 +65,7 @@ export default function CountdownTimer({ show }) {
       )}
 
       <p className="countdown-eyebrow">
-        COUNTDOWN TO OUR NIKKAH
+        COUNTDOWN TO OUR WALIMA
       </p>
 
       <h2 className="countdown-date">

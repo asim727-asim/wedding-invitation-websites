@@ -879,6 +879,7 @@ h1.hero-names-cursive {
 
 .scratch-event-card {
   flex: 1;
+  max-width: 280px;
   background: rgba(255, 253, 250, 0.94);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
