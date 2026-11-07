@@ -225,7 +225,7 @@ video {
   align-items: center;
   width: 90%;
   max-width: 420px;
-  transition: clip-path 2.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 1.5s ease;
+  transition: clip-path 2.2s cubic-bezier(0.25, 1, 0.4, 1), opacity 1.8s ease-out;
   display: flex;
   position: absolute;
   top: calc(50% + 14px);
@@ -349,6 +349,7 @@ h1.hero-names-cursive {
 .scroll-down-button.show {
   opacity: 1;
   pointer-events: auto;
+  transition: opacity 0.8s ease 1.8s, transform 0.8s ease 1.8s;
 }
 
 .scroll-down-box span.scroll,
