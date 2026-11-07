@@ -117,13 +117,28 @@ export const weddingData = {
     noMessage: "We’ll miss you... but you’ll be in our hearts ❤️"
   },
 
-  // Family Section
+  // Closing Message / Walima Thank You Section
+  closingMessage: {
+    heading: "A Celebration Made Special by You",
+    paragraphs: [
+      "Your presence is our greatest gift and your duas are our greatest blessing.",
+      "May Allah fill our journey together with love, mercy, happiness and barakah.",
+      "We look forward to celebrating this special evening with you."
+    ],
+    loveNote: "With love and blessings,",
+    coupleNames: "Asim & Farheen",
+    familyNote: "Together with our families,",
+    parentsNames: "Mr. Zahid Ansari & Mrs. Sadaf Ansari",
+    closingDua: "JazakAllah Khair – With heartfelt gratitude."
+  },
+
+  // Family Section (kept for compatibility)
   compliments: {
-    title: "Together With Our Families And Friends",
+    title: "A Celebration Made Special by You",
     symbol: "❧",
     members: [
       {
-        name: "MR. Zahid Ansari & MRS. Sadaf Ansari",
+        name: "Mr. Zahid Ansari & Mrs. Sadaf Ansari",
         role: "Groom's Parents"
       }
     ],

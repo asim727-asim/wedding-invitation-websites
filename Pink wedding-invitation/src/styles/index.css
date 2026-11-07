@@ -1277,96 +1277,159 @@ h1.hero-names-cursive {
   pointer-events: none;
 }
 
-/* Compliments Section */
+/* ==========================================================================
+   CLOSING MESSAGE SECTION ("A Celebration Made Special by You")
+   ========================================================================== */
+.closing-message-section,
 .compliments-section {
   position: relative;
   z-index: 2;
   text-align: center;
   background-color: transparent;
-  padding: clamp(24px, 4.5vw, 36px) 20px 6px;
+  padding: clamp(28px, 5.5vw, 42px) 20px 10px;
 }
 
+.closing-message-container,
 .compliments-container {
-  max-width: 440px;
+  max-width: 480px;
   margin: 0 auto;
 }
 
-.compliments-header {
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 8px;
+.closing-header {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 6px;
 }
 
-.comp-line {
-  background: rgba(197, 164, 109, 0.5);
-  width: 40px;
+.closing-line {
+  background: linear-gradient(90deg, transparent, rgba(197, 164, 109, 0.65), transparent);
+  width: clamp(28px, 6vw, 45px);
   height: 1px;
   display: inline-block;
+  flex-shrink: 0;
 }
 
-.comp-label {
-  color: var(--color-rose-deep);
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-family: var(--font-sans);
-  font-size: clamp(0.74rem, 2.2vw, 0.82rem);
-  font-weight: 700;
-}
-
-.comp-ornament {
-  color: var(--color-champagne-gold);
-  margin-bottom: 8px;
-  font-size: 1.5rem;
-}
-
-.comp-family-list {
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-  display: flex;
-}
-
-.comp-member {
-  text-align: center;
-}
-
-.comp-name {
-  color: var(--color-text-primary);
+.closing-title {
+  color: var(--color-burgundy-deep);
   font-family: var(--font-serif-display);
-  font-size: clamp(1.2rem, 3.6vw, 1.4rem);
+  font-size: clamp(1.4rem, 4.4vw, 1.85rem);
   font-weight: 700;
-  letter-spacing: 0.3px;
-  margin: 0 0 4px;
+  letter-spacing: 0.5px;
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.85);
+  line-height: 1.25;
 }
 
-.comp-role {
+.closing-ornament {
+  color: var(--color-champagne-gold);
+  margin-bottom: 14px;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.closing-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.closing-paragraph {
+  color: var(--color-text-secondary);
+  font-family: var(--font-serif-display);
+  font-size: clamp(1.02rem, 3.1vw, 1.18rem);
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 6px;
+}
+
+.closing-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 60%;
+  max-width: 180px;
+  margin: 16px auto 18px;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: rgba(197, 164, 109, 0.35);
+}
+
+.divider-icon {
+  color: var(--color-champagne-gold);
+  font-size: 0.7rem;
+}
+
+.closing-signoff {
+  margin-bottom: 16px;
+}
+
+.closing-love-note {
   color: var(--color-rose-deep);
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: var(--font-sans);
+  font-size: clamp(0.72rem, 2.1vw, 0.8rem);
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.closing-couple-names {
+  color: var(--color-burgundy-deep);
+  font-family: var(--font-script-groom);
+  font-size: clamp(2.3rem, 7.2vw, 3rem);
+  font-weight: 400;
+  line-height: 1.2;
   margin: 0;
-  font-size: 0.72rem;
-  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7);
 }
 
-.comp-divider {
-  opacity: 0.5;
-  background: rgba(197, 164, 109, 0.4);
-  width: 1px;
-  height: 20px;
-  margin: 10px auto 0;
+.closing-family {
+  margin-bottom: 16px;
 }
 
-.comp-stars {
-  color: var(--color-champagne-gold);
-  letter-spacing: 2.5px;
-  margin-top: 10px;
+.closing-family-note {
+  color: var(--color-rose-muted);
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
   font-family: var(--font-sans);
-  font-size: 0.95rem;
+  font-size: clamp(0.7rem, 2vw, 0.78rem);
   font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.closing-parents-names {
+  color: var(--color-text-primary);
+  font-family: var(--font-serif-display);
+  font-size: clamp(1.15rem, 3.4vw, 1.35rem);
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin: 0;
+}
+
+.closing-dua-wrapper {
+  margin-top: 10px;
+  padding-top: 14px;
+  border-top: 1px dashed rgba(197, 164, 109, 0.45);
+  display: inline-block;
+  max-width: 90%;
+}
+
+.closing-dua {
+  color: var(--color-rose-deep);
+  font-family: var(--font-serif-display);
+  font-size: clamp(0.98rem, 2.8vw, 1.12rem);
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin: 0;
 }
 
 /* Thank You Envelope Section */
@@ -1387,7 +1450,7 @@ h1.hero-names-cursive {
 
 .thankyou-card-wrapper {
   width: 100%;
-  margin: -40px auto 0;
+  margin: 18px auto 0;
   display: block;
   position: relative;
   overflow: hidden;

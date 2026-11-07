@@ -2,34 +2,54 @@ import React from 'react';
 import { weddingData } from '../data/weddingData';
 
 export default function ComplimentsSection() {
-  const { compliments } = weddingData;
+  const { closingMessage } = weddingData;
 
   return (
-    <section className="compliments-section">
-      <div className="compliments-container scroll-animate">
-        <div className="compliments-header">
-          <span className="comp-line" />
-          <span className="comp-label">{compliments.title}</span>
-          <span className="comp-line" />
+    <section className="closing-message-section compliments-section">
+      <div className="closing-message-container compliments-container scroll-animate">
+        {/* Section Heading */}
+        <div className="closing-header">
+          <span className="closing-line" />
+          <h2 className="closing-title">{closingMessage.heading}</h2>
+          <span className="closing-line" />
         </div>
 
-        <div className="comp-ornament">{compliments.symbol}</div>
+        {/* Decorative Ornament */}
+        <div className="closing-ornament" aria-hidden="true">❧</div>
 
-        <div className="comp-family-list">
-          {compliments.members.map((member, index) => (
-            <div key={index} className="comp-member">
-              <p className="comp-name">
-                {member.name}
-              </p>
-              {member.role && <p className="comp-role">{member.role}</p>}
-              {index < compliments.members.length - 1 && <div className="comp-divider" />}
-            </div>
+        {/* Main Message Paragraphs */}
+        <div className="closing-body">
+          {closingMessage.paragraphs.map((paragraph, index) => (
+            <p key={index} className="closing-paragraph">
+              {paragraph}
+            </p>
           ))}
         </div>
 
-        <div className="comp-stars">{compliments.footerTag}</div>
+        {/* Subtle Decorative Divider */}
+        <div className="closing-divider" aria-hidden="true">
+          <span className="divider-line" />
+          <span className="divider-icon">✦</span>
+          <span className="divider-line" />
+        </div>
+
+        {/* With Love and Blessings */}
+        <div className="closing-signoff">
+          <p className="closing-love-note">{closingMessage.loveNote}</p>
+          <p className="closing-couple-names">{closingMessage.coupleNames}</p>
+        </div>
+
+        {/* Together with our families */}
+        <div className="closing-family">
+          <p className="closing-family-note">{closingMessage.familyNote}</p>
+          <p className="closing-parents-names">{closingMessage.parentsNames}</p>
+        </div>
+
+        {/* Closing Dua */}
+        <div className="closing-dua-wrapper">
+          <p className="closing-dua">{closingMessage.closingDua}</p>
+        </div>
       </div>
     </section>
   );
 }
-
