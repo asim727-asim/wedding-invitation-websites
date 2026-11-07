@@ -219,13 +219,12 @@ video {
   text-align: center;
   z-index: 5;
   opacity: 0;
-  clip-path: inset(0 50%);
   pointer-events: none;
   flex-direction: column;
   align-items: center;
   width: 90%;
   max-width: 420px;
-  transition: clip-path 2.2s cubic-bezier(0.25, 1, 0.4, 1), opacity 1.8s ease-out;
+  transition: opacity 1.2s ease-in-out;
   display: flex;
   position: absolute;
   top: calc(50% + 14px);
@@ -235,7 +234,6 @@ video {
 
 .text-overlay.reveal {
   opacity: 1;
-  clip-path: inset(0 0%);
   pointer-events: auto;
 }
 
@@ -349,7 +347,7 @@ h1.hero-names-cursive {
 .scroll-down-button.show {
   opacity: 1;
   pointer-events: auto;
-  transition: opacity 0.8s ease 1.8s, transform 0.8s ease 1.8s;
+  transition: opacity 0.8s ease 0.4s, transform 0.8s ease 0.4s;
 }
 
 .scroll-down-box span.scroll,

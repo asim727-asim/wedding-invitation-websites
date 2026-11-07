@@ -67,10 +67,10 @@ export default function App() {
     }
   }, []);
 
-  // Monitor curtain video playback time to coordinate name reveal with curtain opening
+  // Monitor curtain video playback time to reveal names only after curtains fully open
   const handleVideoTimeUpdate = () => {
     const video = curtainVideoRef.current;
-    if (video && video.currentTime >= 0.35 && !isRevealed) {
+    if (video && video.currentTime >= 3.0 && !isRevealed) {
       setIsRevealed(true);
       document.body.style.overflow = 'auto';
     }
