@@ -1284,7 +1284,7 @@ h1.hero-names-cursive {
   z-index: 2;
   text-align: center;
   background-color: transparent;
-  padding: clamp(35px, 6vw, 50px) 20px 10px;
+  padding: clamp(24px, 4.5vw, 36px) 20px 6px;
 }
 
 .compliments-container {
@@ -1296,7 +1296,7 @@ h1.hero-names-cursive {
   justify-content: center;
   align-items: center;
   gap: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   display: flex;
 }
 
@@ -1318,7 +1318,7 @@ h1.hero-names-cursive {
 
 .comp-ornament {
   color: var(--color-champagne-gold);
-  margin-bottom: 14px;
+  margin-bottom: 8px;
   font-size: 1.5rem;
 }
 
@@ -1326,7 +1326,7 @@ h1.hero-names-cursive {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   display: flex;
 }
 
@@ -1364,7 +1364,7 @@ h1.hero-names-cursive {
 .comp-stars {
   color: var(--color-champagne-gold);
   letter-spacing: 2.5px;
-  margin-top: 14px;
+  margin-top: 10px;
   font-family: var(--font-sans);
   font-size: 0.95rem;
   font-weight: 600;

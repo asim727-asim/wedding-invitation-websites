@@ -125,10 +125,6 @@ export const weddingData = {
       {
         name: "MR. Zahid Ansari & MRS. Sadaf Ansari",
         role: "Groom's Parents"
-      },
-      {
-        name: "MR. Ahamed Shabbir Shaikh & MRS. Rehana Shaikh",
-        role: "Bride's Parents"
       }
     ],
     footerTag: "✦ Near & Dear ✦"
