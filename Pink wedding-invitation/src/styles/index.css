@@ -126,8 +126,11 @@ a {
   align-items: center;
   width: 100%;
   height: 100vh;
+  height: 100svh;
   height: 100dvh;
   min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -268,14 +271,13 @@ h1.hero-names-cursive {
   font-weight: 400;
   line-height: 1.1;
   display: block;
-  color: #c75b75;
+  color: #a83f5b;
   margin: clamp(4px, 1.2vh, 10px) 0;
   letter-spacing: 0.5px;
   text-shadow:
-    0 1px 2px rgba(42, 26, 31, 0.9),
-    0 2px 6px rgba(42, 26, 31, 0.75),
-    0 4px 14px rgba(53, 32, 38, 0.6),
-    0 0 20px rgba(199, 91, 117, 0.35);
+    0 1px 2px rgba(35, 18, 23, 0.9),
+    0 2px 8px rgba(35, 18, 23, 0.75),
+    0 4px 16px rgba(45, 22, 29, 0.5);
 }
 
 .bride-name {
@@ -333,7 +335,7 @@ h1.hero-names-cursive {
   animation: 2.4s ease-in-out infinite floatScroll;
   display: flex;
   position: absolute;
-  bottom: clamp(38px, calc(env(safe-area-inset-bottom, 20px) + 24px), 68px);
+  bottom: max(68px, calc(env(safe-area-inset-bottom, 0px) + 54px));
   left: 50%;
   transform: translate(-50%, 0);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.25);
@@ -1205,15 +1207,16 @@ h1.hero-names-cursive {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 9px;
-  padding: 12px 24px;
-  min-height: 46px;
+  gap: 8px;
+  padding: 12px 18px;
+  min-height: 48px;
   border-radius: 999px;
   font-family: var(--font-sans);
-  font-size: 0.8rem;
+  font-size: clamp(0.72rem, 3.6vw, 0.82rem);
   font-weight: 600;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.8px;
   text-decoration: none;
+  white-space: nowrap;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   width: 100%;
   max-width: 320px;
@@ -1258,7 +1261,7 @@ h1.hero-names-cursive {
   background-position: center top;
   background-repeat: no-repeat;
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: max(85px, calc(env(safe-area-inset-bottom, 0px) + 75px));
   overflow: hidden;
 }
 
@@ -1472,18 +1475,18 @@ h1.hero-names-cursive {
   backdrop-filter: blur(14px);
   cursor: pointer;
   z-index: 9999;
-  background: rgba(255, 253, 250, 0.75);
+  background: rgba(255, 253, 250, 0.85);
   border: 1.5px solid rgba(197, 164, 109, 0.55);
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   display: flex;
   position: fixed;
-  bottom: max(22px, calc(env(safe-area-inset-bottom, 20px) + 12px));
-  right: max(20px, calc(env(safe-area-inset-right, 20px) + 10px));
+  bottom: max(24px, calc(env(safe-area-inset-bottom, 0px) + 20px));
+  right: max(16px, calc(env(safe-area-inset-right, 0px) + 12px));
   box-shadow: 0 6px 20px rgba(101, 60, 75, 0.18), inset 0 1px 1px rgba(255, 255, 255, 0.6);
 }
 
