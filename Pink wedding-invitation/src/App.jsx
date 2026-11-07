@@ -17,23 +17,12 @@ export default function App() {
   const audioRef = useRef(null);
   const curtainVideoRef = useRef(null);
 
-  // Lock scroll initially until user opens invitation
+  // Ensure vertical side scroll up and down is always enabled
   useEffect(() => {
-    document.body.style.overflow = 'hidden';
-
-    // Allow keyboard scrolling if user presses arrow/page down
-    const handleKeyDown = (e) => {
-      if (['ArrowDown', 'PageDown', ' '].includes(e.key) && !hasStarted) {
-        document.body.style.overflow = 'auto';
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = 'auto';
-    };
-  }, [hasStarted]);
+    document.documentElement.style.overflowY = 'auto';
+    document.body.style.overflowY = 'auto';
+    document.body.style.overflowX = 'hidden';
+  }, []);
 
   // Handle invitation start (tap to open)
   const handleStart = useCallback(() => {
