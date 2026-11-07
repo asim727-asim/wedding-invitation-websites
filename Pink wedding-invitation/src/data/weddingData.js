@@ -75,6 +75,20 @@ export const weddingData = {
   // Wedding Events & Venues
   events: [
     {
+      id: "nikkah",
+      badgeTitle: "Nikkah Khwani",
+      badgeIcon: "star",
+      image: "/assets/masjid-CpSqpTFh.png",
+      imageAlt: "DARUL ULOOM MEHBOOB-E-SUBHANI",
+      date: "Friday, 18 December 2026",
+      time: "⏰ After Jumma Namaz at",
+      venueName: "DARUL ULOOM MEHBOOB-E-SUBHANI",
+      venueNameHindi: "",
+      venueAddress: "Kurla West, Mumbai, Maharashtra 400070",
+      mapUrl: "https://maps.app.goo.gl/4RoYkLak9gVcgpF96",
+      buttonStyle: "primary"
+    },
+    {
       id: "walima",
       badgeTitle: "Dawat-e-Walima",
       badgeIcon: "crown",
