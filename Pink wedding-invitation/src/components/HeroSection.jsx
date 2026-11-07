@@ -52,11 +52,7 @@ export default function HeroSection({
         <div id="textOverlay" className={`text-overlay ${isRevealed ? 'reveal' : ''}`}>
           <h1 className="hero-names-cursive">
             <span className="groom-name">{couple.groom.name}</span>
-            <img
-              src={hero.emblemImage}
-              alt="Ornate Golden Weds Emblem"
-              className="hero-emblem"
-            />
+            <span className="hero-weds">Weds</span>
             <span className="bride-name">{couple.bride.name}</span>
           </h1>
           <img src={hero.ringImage} alt="Wedding Rings" className="ring-image" />

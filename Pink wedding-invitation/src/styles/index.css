@@ -237,9 +237,8 @@ video {
 }
 
 h1.hero-names-cursive {
-  color: #ffffff;
+  color: #fffdfa;
   letter-spacing: 0.5px;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.85), 0 0 28px rgba(221, 160, 174, 0.65);
   text-align: center;
   margin: 0;
   display: flex;
@@ -255,6 +254,28 @@ h1.hero-names-cursive {
   line-height: 1.15;
   display: block;
   transform: scale(1.06);
+  color: #fffdfa;
+  text-shadow:
+    0 1px 2px rgba(42, 26, 31, 0.95),
+    0 2px 6px rgba(42, 26, 31, 0.85),
+    0 4px 14px rgba(53, 32, 38, 0.75),
+    0 8px 28px rgba(53, 32, 38, 0.5);
+}
+
+.hero-weds {
+  font-family: var(--font-script-bride, 'Great Vibes', cursive);
+  font-size: clamp(1.75rem, 5.6vw, 2.35rem);
+  font-weight: 400;
+  line-height: 1.1;
+  display: block;
+  color: #c75b75;
+  margin: clamp(4px, 1.2vh, 10px) 0;
+  letter-spacing: 0.5px;
+  text-shadow:
+    0 1px 2px rgba(42, 26, 31, 0.9),
+    0 2px 6px rgba(42, 26, 31, 0.75),
+    0 4px 14px rgba(53, 32, 38, 0.6),
+    0 0 20px rgba(199, 91, 117, 0.35);
 }
 
 .bride-name {
@@ -263,6 +284,12 @@ h1.hero-names-cursive {
   font-weight: 400;
   line-height: 1.15;
   display: block;
+  color: #fffdfa;
+  text-shadow:
+    0 1px 2px rgba(42, 26, 31, 0.95),
+    0 2px 6px rgba(42, 26, 31, 0.85),
+    0 4px 14px rgba(53, 32, 38, 0.75),
+    0 8px 28px rgba(53, 32, 38, 0.5);
 }
 
 .hero-emblem {
