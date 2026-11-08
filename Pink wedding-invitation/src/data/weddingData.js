@@ -56,16 +56,27 @@ export const weddingData = {
     revealButtonText: "Reveal Date",
     discoverSubtitle: "SCRATCH TO DISCOVER THE DATES",
     cards: [
-      { id: "day", title: "19th" },
+      { id: "day", title: "18th" },
       { id: "month", title: "December" },
       { id: "year", title: "2026" }
     ],
-    // Countdown Target: Walima on 19 December 2026
-    countdownTarget: "December 19, 2026 18:00:00",
-    countdownDisplayDate: "19 . 12 . 2026",
+    // Countdown Target: Nikkah on 18 December 2026
+    countdownTarget: "December 18, 2026 13:30:00",
+    countdownDisplayDate: "18 . 12 . 2026",
     eventsSummary: [
       {
+        heading: "NIKKAH",
+        title: "NIKKAH",
+        name: "Nikkah Khwani",
+        eventName: "Nikkah Khwani",
+        date: "18 December 2026",
+        time: "After Jumma Namaz"
+      },
+      {
+        heading: "WALIMA",
         title: "WALIMA",
+        name: "Dawat-e-Walima",
+        eventName: "Dawat-e-Walima",
         date: "19 December 2026",
         time: "After Magrib"
       }
