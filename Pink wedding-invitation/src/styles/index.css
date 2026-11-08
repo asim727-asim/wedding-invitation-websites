@@ -1286,7 +1286,7 @@ h1.hero-names-cursive {
   z-index: 2;
   text-align: center;
   background-color: transparent;
-  padding: clamp(28px, 5.5vw, 42px) 20px 10px;
+  padding: clamp(28px, 5.5vw, 42px) 20px 0;
 }
 
 .closing-message-container,
@@ -1438,7 +1438,7 @@ h1.hero-names-cursive {
   z-index: 2;
   text-align: center;
   background-color: transparent;
-  padding: 10px 15px clamp(35px, 6vw, 55px);
+  padding: 0 15px clamp(35px, 6vw, 55px);
   isolation: isolate;
 }
 
@@ -1450,7 +1450,7 @@ h1.hero-names-cursive {
 
 .thankyou-card-wrapper {
   width: 100%;
-  margin: 18px auto 0;
+  margin: clamp(-64px, -17vw, -52px) auto 0;
   display: block;
   position: relative;
   overflow: hidden;
