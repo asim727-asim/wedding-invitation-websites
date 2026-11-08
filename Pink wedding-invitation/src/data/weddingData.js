@@ -132,14 +132,10 @@ export const weddingData = {
   closingMessage: {
     heading: "A Celebration Made Special by You",
     paragraphs: [
-      "Your presence is our greatest gift and your duas are our greatest blessing.",
-      "May Allah fill our journey together with love, mercy, happiness and barakah.",
-      "We look forward to celebrating this special evening with you."
+      "Your presence is our greatest gift, and your duas, our greatest blessing.",
+      "May Allah bless our journey with love, mercy, happiness, and barakah.",
+      "With our families’ love and blessings, we warmly invite you to celebrate this special occasion with us."
     ],
-    loveNote: "With love and blessings,",
-    coupleNames: "Asim & Farheen",
-    familyNote: "Together with our families,",
-    parentsNames: "Mr. Zahid Ansari & Mrs. Sadaf Ansari",
     closingDua: "JazakAllah Khair – With heartfelt gratitude."
   },
 
@@ -149,8 +145,8 @@ export const weddingData = {
     symbol: "❧",
     members: [
       {
-        name: "Mr. Zahid Ansari & Mrs. Sadaf Ansari",
-        role: "Groom's Parents"
+        name: "THE ANSARI AND KHANE FAMILIES",
+        role: "Family"
       }
     ],
     footerTag: "✦ Near & Dear ✦"

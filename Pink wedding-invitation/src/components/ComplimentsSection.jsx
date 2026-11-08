@@ -17,7 +17,7 @@ export default function ComplimentsSection() {
         {/* Decorative Ornament */}
         <div className="closing-ornament" aria-hidden="true">❧</div>
 
-        {/* Main Message Paragraphs */}
+        {/* Three Closing Lines */}
         <div className="closing-body">
           {closingMessage.paragraphs.map((paragraph, index) => (
             <p key={index} className="closing-paragraph">
@@ -31,18 +31,6 @@ export default function ComplimentsSection() {
           <span className="divider-line" />
           <span className="divider-icon">✦</span>
           <span className="divider-line" />
-        </div>
-
-        {/* With Love and Blessings */}
-        <div className="closing-signoff">
-          <p className="closing-love-note">{closingMessage.loveNote}</p>
-          <p className="closing-couple-names">{closingMessage.coupleNames}</p>
-        </div>
-
-        {/* Together with our families */}
-        <div className="closing-family">
-          <p className="closing-family-note">{closingMessage.familyNote}</p>
-          <p className="closing-parents-names">{closingMessage.parentsNames}</p>
         </div>
 
         {/* Closing Dua */}
